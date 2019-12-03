@@ -17,7 +17,7 @@ playerCoord = [0,0]
 icon0 = pygame.image.load('icon0.jpg').convert() 
 icon1 = pygame.image.load('icon1.jpg').convert()
 icon2 = pygame.image.load('icon2.jpg').convert()
-icon3 = pygame.image.load('icon3.jpg').convert()
+icon3 = pygame.image.load('icon4.gif').convert()
 
 # 3 - Define game functions ####################################################
 ## 3a - Initialize the game board
@@ -41,7 +41,7 @@ def drawIcon(rw,cl,iconName):
 def updateBoard():
   for row in range(5):
     for column in range(5):
-      color = WHITE             
+      color = WHITE            
       pygame.draw.rect(screen,color,[(margin + width) * column + margin,
                                      (margin + height) * row + margin,
                                       width, height])
